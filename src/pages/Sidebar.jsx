@@ -25,7 +25,7 @@ export const Sidebar = () => {
     <>
       <section className='sidebar'>
         <div className='birds-title'>
-          <img className='bird-title-pic' src={bird} alt='' />
+          <img className='bird-title-pic' src={bird} alt='birb' />
           <h1>Birds</h1>
         </div>
         <ul>
@@ -38,7 +38,7 @@ export const Sidebar = () => {
                     setSelectedBird(bird);
                   }}
                 >
-                  <img src={bird.image} className='sidebar-pic' />
+                  <img src={bird.image} className='sidebar-pic' alt='birb' />
                   <span>{bird.name}</span>
                 </li>
               );
