@@ -1,6 +1,6 @@
 // import { MapComponent } from './MapComponent';
 
-import React, { useEffect, useRef, ReactElement, useState } from 'react';
+import React from 'react';
 import audio from '../assets/audio.svg';
 export const BirdDetails = ({ bird }) => {
   const lat = bird.location.lat;

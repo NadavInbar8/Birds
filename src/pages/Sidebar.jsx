@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
-import { weatherService } from '../services/weather.service';
 import { BirdDetails } from './BirdDetails';
 import useFetch from './useFetch';
 import bird from '../assets/bird.svg';
