@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(197, 197, 197);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+.homepage {
+  max-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  background-color: lightblue;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  overflow-y: auto;
+  width: 20vw;
+  min-width: 300px;
+}
+
+.birds-title {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 22px;
+  color: whitesmoke;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.767);
+}
+.birds-title > * {
+  margin: 10px;
+  color: white;
+  fill: white;
+}
+
+.bird-title-pic {
+  height: 70px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+  font-family: 'Montserrat';
+}
+.sidebar ul li > * {
+  margin: 8px;
+  border-radius: 6px;
+  font-size: large;
+}
+
+.sidebar-pic {
+  height: 60px;
+  width: 60px;
+  border: 3px solid white;
+}
+
+.bird-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 79vw;
+}
+.map {
+  margin: 20px;
+  height: 500px;
+  width: 500px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.746);
+}
+
+.bird-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 8px;
+  height: 200px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.second-header {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-family: 'Montserrat';
+}
+.audio {
+  height: 50px;
+  margin-right: 50px;
+}
+
+.bird-header h1 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.bird-pic {
+  margin: 20px;
+  height: 500px;
+  width: 500px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.746);
+}
