@@ -5,15 +5,13 @@ import audio from '../assets/audio.svg';
 export const BirdDetails = ({ bird }) => {
   const lat = bird.location.lat;
   const lng = bird.location.lng;
-  const zoom = 4;
-  console.log(bird);
   function playSound(url) {
     let sound = new Audio(url);
     sound.play();
   }
   return (
     <section className='birdDetails'>
-      {bird ? (
+      {bird && (
         <div>
           <div className='bird-header'>
             <div className='main-header'>
@@ -40,7 +38,7 @@ export const BirdDetails = ({ bird }) => {
             />
           </div>
         </div>
-      ) : null}
+      )}
     </section>
   );
 };
