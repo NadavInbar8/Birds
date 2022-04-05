@@ -33,7 +33,7 @@ export const BirdDetails = ({ bird }) => {
             <img className='bird-pic' src={bird.image} alt={bird.name} />
             <img
               className='map'
-              src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=4&size=400x400&maptype=roadmap&markers=color:red%7Clabel:%7C${lat},${lng}&key=AIzaSyDtlDaW_mjPqd70Gqryet8e-azrySuneyw`}
+              src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=4&size=400x400&maptype=roadmap&markers=color:red%7Clabel:%7C${lat},${lng}&key=AIzaSyD0FdHD59jd_JPQ9x7_Q0gydZfT3_OcrDs`}
               alt='Map'
             />
           </div>
