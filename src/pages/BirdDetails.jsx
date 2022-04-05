@@ -5,6 +5,8 @@ import audio from '../assets/audio.svg';
 export const BirdDetails = ({ bird }) => {
   const lat = bird.location.lat;
   const lng = bird.location.lng;
+  const API = process.env.REACT_APP_API;
+
   function playSound(url) {
     let sound = new Audio(url);
     sound.play();
@@ -33,7 +35,7 @@ export const BirdDetails = ({ bird }) => {
             <img className='bird-pic' src={bird.image} alt={bird.name} />
             <img
               className='map'
-              src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=4&size=400x400&maptype=roadmap&markers=color:red%7Clabel:%7C${lat},${lng}&key=AIzaSyD0FdHD59jd_JPQ9x7_Q0gydZfT3_OcrDs`}
+              src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=4&size=400x400&maptype=roadmap&markers=color:red%7Clabel:%7C${lat},${lng}&key=${API}`}
               alt='Map'
             />
           </div>
